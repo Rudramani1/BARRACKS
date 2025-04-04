@@ -136,7 +136,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             className="flex items-center justify-center font-semibold text-lg"
           >
             <Swords className="mr-2 h-5 w-5 text-primary" />
-            <span>QuizShare</span>
+            <span>LearnFlow</span>
           </Link>
           <div className="flex-1" />
           <div className="hidden md:flex items-center gap-x-2">
