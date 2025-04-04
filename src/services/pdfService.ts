@@ -1,5 +1,4 @@
 
-// This service handles PDF extraction and processing
 
 import { GEMINI_API_KEY, GEMINI_API_URL } from "./api";
 

@@ -3,7 +3,7 @@ import { generateFlowchart, FlowchartData } from "./flowchartService";
 import { generateFlashcards, generateNotes, generateKeyPoints } from "./api";
 import { generateVideoSummary, VideoSummary } from "./summaryService";
 
-// Processing multiple items in parallel for speed
+
 export const processYoutubeContent = async (
   transcriptText: string
 ): Promise<{
@@ -12,7 +12,7 @@ export const processYoutubeContent = async (
   isComplete: boolean;
 }> => {
   try {
-    // Process summary and key points in parallel for faster results
+ 
     const [summary, keyPoints] = await Promise.all([
       generateVideoSummary(transcriptText),
       generateKeyPoints(transcriptText)
@@ -29,11 +29,11 @@ export const processYoutubeContent = async (
   }
 };
 
-// Generate flowchart from key points quickly
+
 export const generateFlowchartFromKeyPoints = async (
   keyPoints: string[]
 ): Promise<FlowchartData> => {
-  // Join key points into a single text for faster processing
+  
   const keyPointsText = keyPoints.join("\n\n");
   
   try {
@@ -45,7 +45,7 @@ export const generateFlowchartFromKeyPoints = async (
   }
 };
 
-// Generate study materials more efficiently
+
 export const generateStudyMaterials = async (
   transcriptText: string
 ): Promise<{
@@ -53,7 +53,7 @@ export const generateStudyMaterials = async (
   notes: any[];
 }> => {
   try {
-    // Process flashcards and notes in parallel for faster results
+    
     const [flashcards, notes] = await Promise.all([
       generateFlashcards(transcriptText),
       generateNotes(transcriptText)

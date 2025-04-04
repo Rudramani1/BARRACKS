@@ -17,7 +17,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { cn } from "@/lib/utils";
-import { Menu, X, BookOpen, Award, GitBranch, UserCheck, Check } from "lucide-react";
+import { Menu, X, BookOpen, Award, Swords, GitBranch, UserCheck, Check } from "lucide-react";
 
 interface NavLinkProps {
   href: string;
@@ -46,7 +46,7 @@ const navLinks = [
   {
     name: "Join Quiz",
     href: "/join",
-    icon: <UserCheck className="w-5 h-5" />,
+    icon: <Swords className="w-5 h-5" />,
   },
 ];
 
@@ -135,7 +135,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             to="/"
             className="flex items-center justify-center font-semibold text-lg"
           >
-            <Award className="mr-2 h-5 w-5 text-primary" />
+            <Swords className="mr-2 h-5 w-5 text-primary" />
             <span>QuizShare</span>
           </Link>
           <div className="flex-1" />
