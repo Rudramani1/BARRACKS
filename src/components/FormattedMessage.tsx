@@ -17,8 +17,8 @@ export function FormattedMessage({ content, className }: FormattedMessageProps) 
 function parseContent(content: string): React.ReactNode {
   // Clean up the content by removing markdown syntax
   const cleanedContent = content
-    .replace(/^### /gm, "") // Remove ### at the beginning of lines
-    .replace(/^#### /gm, ""); // Remove #### at the beginning of lines
+    .replace(/^### /gm, "") 
+    .replace(/^#### /gm, ""); 
 
   // Split the content by line breaks
   const lines = cleanedContent.split("\n");
