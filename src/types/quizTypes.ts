@@ -1,4 +1,6 @@
 
+// Application-specific type definitions for the quiz functionality
+
 export interface FlashcardItem {
   id: string;
   question: string;
