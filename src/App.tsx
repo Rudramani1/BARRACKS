@@ -36,6 +36,7 @@ const App = () => {
                 <Route path="/join" element={<JoinQuiz />} />
                 <Route path="/join/:sessionId" element={<JoinQuiz />} />
                 <Route path="/host/:sessionId" element={<HostQuiz />} />
+                <Route path="/play/:sessionId" element={<PlayQuiz />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Layout>
