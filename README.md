@@ -122,7 +122,6 @@
 
 #### Google Drive Video Demo
 
-You can view a demo of our project on Google Drive:
 [![Watch Demo](./Thumbnail.png)](https://drive.google.com/file/d/1Pgj9zV-61x7K8kFtuykCV1mtoxIsI0fo/view?usp=sharing)
 
 
