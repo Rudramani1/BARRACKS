@@ -52,9 +52,10 @@
  
  3. **Set Up Environment Variables**:
  
-    Create a `.env` file in the root directory and add your Gemini API key:
+    Create a `config.ts` file in the root directory and add your Gemini API key:
     ```env
-    VITE_GEMINI_API_KEY=your_gemini_api_key_here
+    export const GEMINI_API_KEY = your_gemini_api_key_here;
+    export const YOUTUBE_API_KEY = 'your-youtube-api-key-here';
     ```
  
  4. **Run the Development Server**:
